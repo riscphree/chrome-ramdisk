@@ -9,6 +9,6 @@ if [ $# -lt 1 ]; then
 fi
 
 rm -rf ~/Library/Caches/Google/Chrome/Default
-ln -s RAMDISKFOLDER ~/Library/Caches/Google/Chrome/Default
+ln -s "$RAMDISKFOLDER" ~/Library/Caches/Google/Chrome/Default
 
 exit 0
