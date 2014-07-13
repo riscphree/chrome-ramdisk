@@ -8,7 +8,8 @@ if [ $# -lt 1 ]; then
         exit 1
 fi
 
-rm -rf ~/Library/Caches/Google/Chrome/Default
+rm -rf ~/Library/Caches/Google/Chrome/*
 ln -s "$RAMDISKFOLDER" ~/Library/Caches/Google/Chrome/Default
+# cp com.runoncoffee.ChromeRamDisk.plist ~/Library/LaunchAgents
 
 exit 0
